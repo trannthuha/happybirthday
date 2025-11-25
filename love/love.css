@@ -140,32 +140,37 @@ body{
     font-size: 30px;
     cursor: pointer;
     z-index: 50;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 .left{
-    left: 100px;
+    left: 10px;
 }
 .right{
-    right: 100px;
+    right: 10px;
 }
 
 .listSlider{
     position: relative;
-    width: 200px;
-    height: 100px;
+    width: 270px;
+    height: 380px;
     display: flex;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .listSlider .slider{
     width: 100%;
-    position: relative;
+    height: 100%;
+    /* position: relative; */
+    flex-shrink: 0;
     transition: 0.5s;
 }
 .listSlider img{
-    width: 200px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 .boxHandsInput{
     display: flex;
